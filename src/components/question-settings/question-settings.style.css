@@ -1,0 +1,18 @@
+.question-settings-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 60%;
+    margin: auto;
+    gap: 0.1rem;
+}
+.question-settings-container * {
+    max-width: 100%;
+    padding: 3px;
+}
+.question-settings-container label {
+    font-size: 0.9rem;
+    margin-right: auto;
+    margin-bottom: -3px;
+}
