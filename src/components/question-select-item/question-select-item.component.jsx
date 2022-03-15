@@ -1,4 +1,4 @@
-const QuestionSelectItem = ({ values, name, onSelect }) => {
+const QuestionSelectItem = ({ name, values, onSelect }) => {
     return (
         <>
             <label htmlFor={`${name}`}>{name}</label>
