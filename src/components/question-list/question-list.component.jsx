@@ -8,6 +8,7 @@ const QuestionList = ({ questionList }) => {
                 <Question
                     key={questionItem.question}
                     question={questionItem.question}
+                    category={questionItem.category}
                     answers={questionItem.incorrect_answers.concat([
                         questionItem.correct_answer,
                     ])}

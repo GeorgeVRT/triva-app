@@ -6,6 +6,7 @@ import QuestionSettings from "./components/question-settings/question-settings.c
 import QuestionList from "./components/question-list/question-list.component";
 
 const App = () => {
+    const [amount, setAmount] = useState(10);
     const [category, setCategory] = useState("Any Category");
     const [difficulty, setDifficulty] = useState("Any Difficulty");
     const [type, setType] = useState("Any Type");
@@ -16,7 +17,24 @@ const App = () => {
     const [questions, setQuestions] = useState();
 
     useEffect(() => {
-        fetch(`https://opentdb.com/api.php?amount=10`)
+        console.log(
+            `https://opentdb.com/api.php?${"amount=" + amount}&${
+                category === "Any Category" ? "" : "category=" + category
+            }&${
+                difficulty === "Any Difficulty"
+                    ? ""
+                    : "difficulty=" + difficulty
+            }&${type === "Any Type" ? "" : "type=" + type}`
+        );
+        fetch(
+            `https://opentdb.com/api.php?${"amount=" + amount}&${
+                category === "Any Category" ? "" : "category=" + category
+            }&${
+                difficulty === "Any Difficulty"
+                    ? ""
+                    : "difficulty=" + difficulty
+            }&${type === "Any Type" ? "" : "type=" + type}`
+        )
             .then((response) => response.json())
             .then((data) => setQuestions(data))
             .catch((err) => {

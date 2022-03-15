@@ -5,14 +5,38 @@ import "./question-settings.style.css";
 import QuestionSelectItem from "../question-select-item/question-select-item.component";
 
 const selectValues = [
-    { name: "category", values: ["Any Category", "General Knowledge"] },
+    {
+        name: "category",
+        values: [
+            "Any Category",
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23,
+            24,
+            25,
+            26,
+            27,
+        ],
+    },
     {
         name: "difficulty",
-        values: ["Any Difficulty", "Easy", "Medium", "Hard"],
+        values: ["Any Difficulty", "easy", "medium", "hard"],
     },
     {
         name: "type",
-        values: ["Any Type", "Multiple Choices", "True False"],
+        values: ["Any Type", "multiple", "boolean"],
     },
 ];
 
