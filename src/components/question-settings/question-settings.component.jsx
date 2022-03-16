@@ -38,8 +38,16 @@ const QuestionSettings = ({ onSelect }) => {
 
     return (
         <div className="question-settings-container">
-            <label htmlFor="category">amount</label>
-            <input type="number" defaultValue={10} />
+            <label className="question-attribute-name" htmlFor="category">
+                amount
+            </label>
+            <input
+                className="question-attribute-select"
+                type="number"
+                onChange={onSelect}
+                name="amount"
+                defaultValue={10}
+            />
             {!loading && (
                 <QuestionSelectItem
                     key={"category"}

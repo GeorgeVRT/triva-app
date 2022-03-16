@@ -1,6 +1,8 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 
+import "./settings-page.style.css";
+
 import QuestionSettings from "../../components/question-settings/question-settings.component";
 // import QuestionList from "../../components/question-list/question-list.component";
 
@@ -15,39 +17,12 @@ const SettingsPage = () => {
 
     const [questions, setQuestions] = useState();
 
-    // useEffect(() => {
-    //     console.log(
-    //         `https://opentdb.com/api.php?${"amount=" + amount}&${
-    //             category === "Any Category" ? "" : "category=" + category
-    //         }&${
-    //             difficulty === "Any Difficulty"
-    //                 ? ""
-    //                 : "difficulty=" + difficulty
-    //         }&${type === "Any Type" ? "" : "type=" + type}`
-    //     );
-    //     fetch(
-    //         `https://opentdb.com/api.php?${"amount=" + amount}&${
-    //             category === "Any Category" ? "" : "category=" + category
-    //         }&${
-    //             difficulty === "Any Difficulty"
-    //                 ? ""
-    //                 : "difficulty=" + difficulty
-    //         }&${type === "Any Type" ? "" : "type=" + type}`
-    //     )
-    //         .then((response) => response.json())
-    //         .then((data) => setQuestions(data))
-    //         .catch((err) => {
-    //             setError(err.message);
-    //             setQuestions(null);
-    //         })
-    //         .finally(() => {
-    //             setLoading(false);
-    //         });
-    // }, [category, difficulty, type]);
-
     const onSelect = (event) => {
         console.log(event.target.value);
         switch (event.target.name) {
+            case "amount":
+                setAmount(event.target.value);
+                break;
             case "category":
                 setCategory(event.target.value);
                 break;

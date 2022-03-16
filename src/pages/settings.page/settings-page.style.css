@@ -1,0 +1,16 @@
+.start-button {
+    text-decoration: none;
+    color: #343536;
+    box-shadow: 3px 3px #f5a52b;
+    border: 2px solid #343536;
+    display: inline-block;
+    padding: 0 0.5rem;
+    margin-top: 2vh;
+    transition: 0.1s ease-in;
+}
+.start-button:hover {
+    box-shadow: 4px 4px #f5a52b;
+    position: relative;
+    top: -1px;
+    left: -1px;
+}

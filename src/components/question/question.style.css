@@ -5,6 +5,7 @@
     flex-direction: column;
     gap: 1rem;
     padding: 0.5rem;
+    box-shadow: 3px 3px #f5a52b;
 }
 .question-category {
     font-size: 1rem;
@@ -19,12 +20,17 @@
     flex-wrap: wrap;
 }
 .question-answer {
+    font-weight: bold;
     border: 2px solid #343536;
+    color: #343536;
     padding: 0.2rem 0.6rem;
     user-select: none;
-    transition: 0.2s ease-in;
+    transition: 0.1s ease-in;
+    box-shadow: 2px 2px #f5a52b;
 }
 .question-answer:hover {
-    color: #d5d8db;
-    background-color: #343536b7;
+    position: relative;
+    top: -1px;
+    left: -1px;
+    box-shadow: 3px 3px #f5a52b;
 }

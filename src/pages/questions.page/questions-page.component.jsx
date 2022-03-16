@@ -19,7 +19,7 @@ const QuestionsPage = () => {
                 difficulty === "Any Difficulty"
                     ? ""
                     : "difficulty=" + difficulty
-            }&${type === "Any Type" ? "" : "type=" + type}`
+            }&${type === "Any Type" ? "" : "type=" + type}&encode=base64`
         );
         fetch(
             `https://opentdb.com/api.php?${"amount=" + amount}&${
@@ -28,7 +28,7 @@ const QuestionsPage = () => {
                 difficulty === "Any Difficulty"
                     ? ""
                     : "difficulty=" + difficulty
-            }&${type === "Any Type" ? "" : "type=" + type}`
+            }&${type === "Any Type" ? "" : "type=" + type}&encode=base64`
         )
             .then((response) => response.json())
             .then((data) => setQuestions(data))
