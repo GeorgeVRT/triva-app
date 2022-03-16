@@ -1,0 +1,30 @@
+.question-card {
+    border: 2px solid #343536;
+    padding: 0.5vh;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 0.5rem;
+}
+.question-category {
+    font-size: 1rem;
+    color: #d5d8db;
+}
+
+.answer-list {
+    display: flex;
+    gap: 1rem;
+    /* padding: 0.5rem; */
+    color: #343536;
+    flex-wrap: wrap;
+}
+.question-answer {
+    border: 2px solid #343536;
+    padding: 0.2rem 0.6rem;
+    user-select: none;
+    transition: 0.2s ease-in;
+}
+.question-answer:hover {
+    color: #d5d8db;
+    background-color: #343536b7;
+}

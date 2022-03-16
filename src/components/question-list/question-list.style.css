@@ -1,0 +1,8 @@
+.question-list {
+    max-width: 500px;
+    margin: auto;
+    padding: 1vh;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5vh;
+}

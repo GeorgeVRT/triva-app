@@ -1,3 +1,5 @@
+import "./question-list.style.css";
+
 import Question from "../question/question.component";
 
 const QuestionList = ({ questionList }) => {
