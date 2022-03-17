@@ -6,3 +6,21 @@
     flex-direction: column;
     gap: 1.5vh;
 }
+.send-answer {
+    background-color: white;
+    color: #343536;
+    border: 2px solid #343536;
+    transition: 0.1s ease-in;
+    box-shadow: 3px 3px #f5a52b;
+    width: fit-content;
+    padding: 0.2rem 0.8rem;
+    font-size: 2rem;
+    font-weight: bold;
+    margin: auto;
+}
+.send-answer:hover {
+    position: relative;
+    top: -1px;
+    left: -1px;
+    box-shadow: 4px 4px #f5a52b;
+}

@@ -18,7 +18,6 @@ const SettingsPage = () => {
     const [questions, setQuestions] = useState();
 
     const onSelect = (event) => {
-        console.log(event.target.value);
         switch (event.target.name) {
             case "amount":
                 setAmount(event.target.value);

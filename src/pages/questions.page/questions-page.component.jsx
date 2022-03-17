@@ -12,15 +12,6 @@ const QuestionsPage = () => {
     const { amount, category, difficulty, type } = useParams();
 
     useEffect(() => {
-        console.log(
-            `https://opentdb.com/api.php?${"amount=" + amount}&${
-                category === "Any Category" ? "" : "category=" + category
-            }&${
-                difficulty === "Any Difficulty"
-                    ? ""
-                    : "difficulty=" + difficulty
-            }&${type === "Any Type" ? "" : "type=" + type}&encode=base64`
-        );
         fetch(
             `https://opentdb.com/api.php?${"amount=" + amount}&${
                 category === "Any Category" ? "" : "category=" + category
