@@ -1,23 +1,36 @@
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 import "./question-list.style.css";
 
 import Question from "../question/question.component";
 
 const QuestionList = ({ questionList }) => {
+    const navigate = useNavigate();
     const userAnswers = Array(questionList.length);
     const rightAnswers = [];
+
+    const [playing, setPlaying] = useState(true);
+
     questionList.map((questionItem) =>
         rightAnswers.push(questionItem.correct_answer)
     );
     const answered = (event) => {
         userAnswers[event.target.id] = btoa(event.target.value);
+        event.target.color = "red";
     };
     const checkAnswers = (ansArr) => {
         const commonAnswers = userAnswers.filter((value) =>
             rightAnswers.includes(value)
         );
-        console.log("you got", commonAnswers.length, "/", questionList.length);
+        if (!playing) {
+            alert(`you got ${commonAnswers.length} / ${questionList.length}`);
+            navigate("/");
+            setPlaying(true);
+        } else {
+            console.log(rightAnswers);
+            setPlaying(false);
+        }
     };
     return (
         <div className="question-list">
@@ -25,6 +38,8 @@ const QuestionList = ({ questionList }) => {
                 <Question
                     key={index}
                     id={index}
+                    playing={playing}
+                    rightAnswer={rightAnswers[index]}
                     question={questionItem.question}
                     category={questionItem.category}
                     answers={questionItem.incorrect_answers.concat([
@@ -34,7 +49,7 @@ const QuestionList = ({ questionList }) => {
                 />
             ))}
             <button onClick={checkAnswers} className="send-answer">
-                answer
+                {playing ? "answer" : "continue"}
             </button>
         </div>
     );

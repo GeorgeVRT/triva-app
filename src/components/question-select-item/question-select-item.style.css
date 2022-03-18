@@ -1,19 +1,20 @@
 .question-attribute-name {
     font-size: 1rem;
-    color: #d5d8db;
+    color: #bcbfc2;
+    user-select: none;
 }
 .question-attribute-select {
-    border: 2px solid #343536;
+    border: 2px solid var(--text-color);
     font-weight: bold;
-    color: #343536;
-    box-shadow: 2px 2px #f5a52b;
+    color: var(--text-color);
+    box-shadow: 2px 2px var(--shadow-color);
     transition: 0.1s ease-in;
 }
 .question-attribute-select:hover {
-    border: 2px solid #343536;
+    border: 2px solid var(--text-color);
     font-weight: bold;
-    color: #343536;
-    box-shadow: 3px 3px #f5a52b;
+    color: var(--text-color);
+    box-shadow: 3px 3px var(--shadow-color);
 
     position: relative;
     top: -1px;
@@ -21,7 +22,7 @@
 }
 .question-attribute-select:focus {
     outline: none;
-    box-shadow: 3px 3px #f5a52b;
+    box-shadow: 3px 3px var(--shadow-color);
 
     position: relative;
     top: -1px;

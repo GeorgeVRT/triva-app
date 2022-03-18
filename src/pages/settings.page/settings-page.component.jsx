@@ -38,11 +38,15 @@ const SettingsPage = () => {
 
     return (
         <div className="App">
-            <QuestionSettings onSelect={onSelect} />
-            {/* {!loading && <QuestionList questionList={questions.results} />} */}
-            <Link to={`/questions/${amount}/${category}/${difficulty}/${type}`}>
-                <h1 className="start-button">Start Trivia</h1>
-            </Link>
+            <div className="search">
+                <QuestionSettings onSelect={onSelect} />
+                {/* {!loading && <QuestionList questionList={questions.results} />} */}
+                <Link
+                    to={`/questions/${amount}/${category}/${difficulty}/${type}`}
+                >
+                    <h1 className="start-button">Start Trivia</h1>
+                </Link>
+            </div>
         </div>
     );
 };
