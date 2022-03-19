@@ -8,6 +8,8 @@
     padding: 3px;
     outline: 2px solid var(--text-color);
     cursor: pointer;
+
+    box-shadow: 4px 4px var(--shadow-color);
 }
 .slider {
     height: 19px;

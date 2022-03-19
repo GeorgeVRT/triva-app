@@ -12,6 +12,7 @@ const ThemeSwitcher = (onChange) => {
             secondText: "#bcbfc2",
             things: "white",
             background: "#eaece5",
+            selected: "#343536",
         },
         {
             shadow: "#5D83E6",
@@ -19,13 +20,15 @@ const ThemeSwitcher = (onChange) => {
             secondText: "#2B2B45",
             things: "#C2D1FF",
             background: "#BCC2E3",
+            selected: "#343536",
         },
         {
             shadow: "#43464A",
             text: "#27292B",
-            secondText: "#6F747A",
+            secondText: "#F3FFF6",
             things: "#D3DCE8",
             background: "#6F747A",
+            selected: "#D3DCE8",
         },
     ]);
 
@@ -50,6 +53,10 @@ const ThemeSwitcher = (onChange) => {
         document.documentElement.style.setProperty(
             "--background-color",
             colors[theme].background
+        );
+        document.documentElement.style.setProperty(
+            "--selected-text-color",
+            colors[theme].selected
         );
     };
 

@@ -48,14 +48,18 @@
 }
 .selected-answer {
     background-color: var(--shadow-color);
+    color: var(--selected-text-color);
 }
 
 .wrong-answer.selected-answer {
     background-color: #ff3527;
+    color: var(--text-color);
 }
 .right-answer {
     background-color: #7fc483;
+    color: var(--text-color);
 }
 .right-answer.selected-answer {
     background-color: #4ce653;
+    color: var(--text-color);
 }

@@ -11,6 +11,7 @@
     --things-color: white;
     --background-color: #eaece5;
     --second-text-color: #bcbfc2;
+    --selected-text-color: #343536;
 }
 .App {
     text-decoration: none;
