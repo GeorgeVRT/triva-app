@@ -54,5 +54,8 @@
     background-color: #ff3527;
 }
 .right-answer {
+    background-color: #7fc483;
+}
+.right-answer.selected-answer {
     background-color: #4ce653;
 }

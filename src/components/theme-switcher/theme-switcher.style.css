@@ -1,0 +1,49 @@
+.switch {
+    background-color: white;
+    height: 25px;
+    width: 75px;
+    margin: auto;
+    border-radius: 15px;
+    position: relative;
+    padding: 3px;
+    outline: 2px solid var(--text-color);
+    cursor: pointer;
+}
+.slider {
+    height: 19px;
+    width: 19px;
+    border-radius: 25px;
+    background-color: var(--shadow-color);
+    outline: 2px solid var(--text-color);
+    position: absolute;
+    bottom: 3px;
+    transition: 0.2s ease-in-out;
+}
+.switch:active .slider {
+    animation-name: shrink;
+    animation-duration: 0.3s;
+}
+.slider-state-0 {
+    left: 3px;
+}
+.slider-state-1 {
+    left: 26px;
+}
+.slider-state-2 {
+    left: 53px;
+}
+
+@keyframes shrink {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(0.8);
+    }
+    75% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}

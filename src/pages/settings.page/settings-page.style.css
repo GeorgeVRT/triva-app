@@ -8,7 +8,7 @@ body {
     justify-content: center;
 }
 .search {
-    margin-top: -15vh;
+    /* margin-top: -15vh; */
 }
 .start-button {
     text-decoration: none;

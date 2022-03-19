@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import "./settings-page.style.css";
 
 import QuestionSettings from "../../components/question-settings/question-settings.component";
+import ThemeSwitcher from "../../components/theme-switcher/theme-switcher.component";
 // import QuestionList from "../../components/question-list/question-list.component";
 
 const SettingsPage = () => {
@@ -34,11 +35,16 @@ const SettingsPage = () => {
         }
     };
 
+    const switchTheme = (theme) => {
+        console.log(`switching to ${theme} theme`);
+    };
+
     // console.log(questions);
 
     return (
         <div className="App">
             <div className="search">
+                <ThemeSwitcher onChange={switchTheme} />
                 <QuestionSettings onSelect={onSelect} />
                 {/* {!loading && <QuestionList questionList={questions.results} />} */}
                 <Link
