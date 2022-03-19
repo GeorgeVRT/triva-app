@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/triva-app/static/css/main.e7046a19.css",
-    "main.js": "/triva-app/static/js/main.10af60d5.js",
+    "main.css": "/triva-app/static/css/main.dcda0b8c.css",
+    "main.js": "/triva-app/static/js/main.165df70b.js",
     "index.html": "/triva-app/index.html",
-    "main.e7046a19.css.map": "/triva-app/static/css/main.e7046a19.css.map",
-    "main.10af60d5.js.map": "/triva-app/static/js/main.10af60d5.js.map"
+    "main.dcda0b8c.css.map": "/triva-app/static/css/main.dcda0b8c.css.map",
+    "main.165df70b.js.map": "/triva-app/static/js/main.165df70b.js.map"
   },
   "entrypoints": [
-    "static/css/main.e7046a19.css",
-    "static/js/main.10af60d5.js"
+    "static/css/main.dcda0b8c.css",
+    "static/js/main.165df70b.js"
   ]
 }
