@@ -9,6 +9,8 @@
     --shadow-color: #f5a52b;
     --text-color: #343536;
     --things-color: white;
+    --background-color: #eaece5;
+    --second-text-color: #bcbfc2;
 }
 .App {
     text-decoration: none;

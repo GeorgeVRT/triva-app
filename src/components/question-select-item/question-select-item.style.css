@@ -1,6 +1,6 @@
 .question-attribute-name {
     font-size: 1rem;
-    color: #bcbfc2;
+    color: var(--second-text-color);
     user-select: none;
 }
 .question-attribute-select {
