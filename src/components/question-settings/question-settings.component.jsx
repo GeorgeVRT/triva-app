@@ -33,7 +33,7 @@ const QuestionSettings = ({ onSelect }) => {
         categoriesNames = categories.map(({ name }) => name);
         categoriesIds = categories.map(({ id }) => id);
     } catch {
-        console.log(0);
+        console.log();
     }
 
     return (

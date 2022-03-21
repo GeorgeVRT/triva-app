@@ -3,9 +3,14 @@ import "./theme-switcher.style.css";
 import { useState } from "react";
 
 const ThemeSwitcher = (onChange) => {
-    const [theme, setTheme] = useState(0);
+    let savedTheme = JSON.parse(localStorage.getItem("theme"));
+    if (savedTheme === null) savedTheme = 0;
 
-    const [colors, setColors] = useState([
+    const [theme, setTheme] = useState(savedTheme);
+
+    console.log("theme : ", theme);
+
+    const colors = [
         {
             shadow: "#f5a52b",
             text: "#343536",
@@ -30,10 +35,9 @@ const ThemeSwitcher = (onChange) => {
             background: "#6F747A",
             selected: "#D3DCE8",
         },
-    ]);
+    ];
 
     const changeTheme = () => {
-        console.log(colors[theme]); //change values from root somewhere here
         document.documentElement.style.setProperty(
             "--shadow-color",
             colors[theme].shadow
@@ -64,9 +68,12 @@ const ThemeSwitcher = (onChange) => {
         changeTheme();
         if (theme < 2) {
             setTheme(theme + 1);
+            localStorage.setItem("theme", JSON.stringify(theme + 1));
         } else {
             setTheme(0);
+            localStorage.setItem("theme", JSON.stringify(0));
         }
+        console.log("changing theme to ", theme);
     };
 
     changeTheme();

@@ -9,7 +9,12 @@
     outline: 2px solid var(--text-color);
     cursor: pointer;
 
+    box-shadow: 3px 3px var(--shadow-color);
+}
+.switch:hover {
     box-shadow: 4px 4px var(--shadow-color);
+    top: -1px;
+    left: -1px;
 }
 .slider {
     height: 19px;
@@ -29,7 +34,7 @@
     left: 3px;
 }
 .slider-state-1 {
-    left: 26px;
+    left: 27px;
 }
 .slider-state-2 {
     left: 53px;
