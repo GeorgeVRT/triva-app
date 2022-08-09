@@ -18,10 +18,13 @@
 
 ## Table of Contents
 
+-   [Overview](#overview)
 -   [Tools](#tools)
 -   [Contact](#contact)
 
-Trivia website
+## Overview
+
+Trivia website where you can select amount of questions, category, type and difficulty, also you can chnage style of website, and it will be writter in a local storage.
 
 ## Tools
 
