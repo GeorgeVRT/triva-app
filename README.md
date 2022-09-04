@@ -6,11 +6,11 @@
 
 <div align="center">
   <h3>
-    <a href="https://phyell.github.io/triva-app/#/">
+    <a href="https://GeorgeVRT.github.io/triva-app/#/">
       Demo
     </a>
     <span> | </span>
-    <a href="https://github.com/PhYell/triva-app">
+    <a href="https://github.com/GeorgeVRT/triva-app">
       Code
     </a>
   </h3>
@@ -33,4 +33,4 @@ Trivia website where you can select amount of questions, category, type and diff
 
 ## Contact
 
--   GitHub [@phYell](https://github.com/PhYell)
+-   GitHub [@GeorgeVRT](https://github.com/GeorgeVRT)
